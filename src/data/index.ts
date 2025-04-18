@@ -14,6 +14,9 @@ export * from './carCategories';
 // Особенности автомобилей
 export * from './carFeatures';
 
+// Изображения автомобилей
+export * from './carImages';
+
 // Специфические наборы данных
 export { sedanCars } from './carsData/sedans';
 export { hatchbackCars } from './carsData/hatchbacks';

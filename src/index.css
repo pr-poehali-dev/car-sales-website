@@ -16,13 +16,13 @@
     --primary: 200 70% 50%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 15 80% 50%;
+    --secondary: 0 90% 50%; /* Изменено на красный для соответствия с Porsche */
     --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 260 70% 55%;
+    --accent: 0 90% 50%; /* Изменено на красный для соответствия с Porsche */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -57,13 +57,13 @@
     --primary: 200 70% 50%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 15 80% 50%;
+    --secondary: 0 90% 50%; /* Изменено на красный для соответствия с Porsche */
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 260 70% 55%;
+    --accent: 0 90% 50%; /* Изменено на красный для соответствия с Porsche */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -91,5 +91,21 @@
 
   body {
     @apply bg-background text-foreground;
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .car-card {
+    @apply relative overflow-hidden transition-all duration-300 
+    hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .car-image {
+    @apply object-cover h-48 w-full transition-transform duration-500;
+  }
+  
+  .car-card:hover .car-image {
+    @apply scale-105;
   }
 }

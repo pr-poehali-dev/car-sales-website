@@ -1,5 +1,6 @@
 import { Car } from "@/types/car";
 import { createCustomFeatures } from "../carFeatures";
+import { getCarImageByBrand } from "../carImages";
 
 /**
  * Данные внедорожников
@@ -12,7 +13,7 @@ export const suvCars: Car[] = [
     year: 2022,
     price: 2850000,
     category: 'Внедорожник',
-    image: '/placeholder.svg',
+    image: getCarImageByBrand('Volkswagen'),
     color: 'Серый',
     mileage: 6500,
     engine: {
@@ -31,7 +32,7 @@ export const suvCars: Car[] = [
     year: 2022,
     price: 4250000,
     category: 'Внедорожник',
-    image: '/placeholder.svg',
+    image: getCarImageByBrand('BMW'),
     color: 'Черный',
     mileage: 3500,
     engine: {
@@ -50,7 +51,7 @@ export const suvCars: Car[] = [
     year: 2022,
     price: 2390000,
     category: 'Внедорожник',
-    image: '/placeholder.svg',
+    image: getCarImageByBrand('Kia'),
     color: 'Зеленый',
     mileage: 4800,
     engine: {
@@ -69,7 +70,7 @@ export const suvCars: Car[] = [
     year: 2021,
     price: 2450000,
     category: 'Внедорожник',
-    image: '/placeholder.svg',
+    image: getCarImageByBrand('Nissan'),
     color: 'Оранжевый',
     mileage: 7500,
     engine: {
@@ -88,7 +89,7 @@ export const suvCars: Car[] = [
     year: 2021,
     price: 2750000,
     category: 'Внедорожник',
-    image: '/placeholder.svg',
+    image: getCarImageByBrand('Honda'),
     color: 'Синий',
     mileage: 5500,
     engine: {
@@ -107,7 +108,7 @@ export const suvCars: Car[] = [
     year: 2021,
     price: 2350000,
     category: 'Внедорожник',
-    image: '/placeholder.svg',
+    image: getCarImageByBrand('Ford'),
     color: 'Серебристый',
     mileage: 6000,
     engine: {

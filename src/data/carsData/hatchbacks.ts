@@ -1,5 +1,6 @@
 import { Car } from "@/types/car";
 import { createCustomFeatures } from "../carFeatures";
+import { getCarImageByBrand } from "../carImages";
 
 /**
  * Данные хэтчбеков
@@ -12,7 +13,7 @@ export const hatchbackCars: Car[] = [
     year: 2021,
     price: 1750000,
     category: 'Хэтчбек',
-    image: '/placeholder.svg',
+    image: getCarImageByBrand('Honda'),
     color: 'Красный',
     mileage: 8000,
     engine: {
@@ -31,7 +32,7 @@ export const hatchbackCars: Car[] = [
     year: 2021,
     price: 1550000,
     category: 'Хэтчбек',
-    image: '/placeholder.svg',
+    image: getCarImageByBrand('Ford'),
     color: 'Синий',
     mileage: 7800,
     engine: {
