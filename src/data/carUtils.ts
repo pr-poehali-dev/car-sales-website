@@ -12,6 +12,13 @@ export const formatPrice = (price: number): string => {
 };
 
 /**
+ * Получение автомобиля по ID
+ */
+export const getCarById = (cars: Car[], id: number): Car | undefined => {
+  return cars.find(car => car.id === id);
+};
+
+/**
  * Фильтрация автомобилей по цене
  */
 export const filterCarsByPrice = (cars: Car[], minPrice: number, maxPrice: number): Car[] => {

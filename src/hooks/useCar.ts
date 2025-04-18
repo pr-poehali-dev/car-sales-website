@@ -19,13 +19,13 @@ export function useCar(id: string | undefined): UseCarResult {
     
     if (id) {
       const parsedId = parseInt(id);
-      const foundCar = getCarById(parsedId);
+      const foundCar = getCarById(cars, parsedId);
       
       setCar(foundCar || null);
       
       if (foundCar) {
-        const similarCars = getSimilarCars(cars, foundCar, 5);
-        setSimilarCars(similarCars);
+        const similar = getSimilarCars(cars, foundCar, 5);
+        setSimilarCars(similar);
       } else {
         setSimilarCars([]);
       }
